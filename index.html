@@ -264,21 +264,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-		<script>
-			var callback_error = function (element) {
-				element.src = "https://via.placeholder.com/440x560/?text=Error+Placeholder";
-			};
-			window.lazyLoadOptions = {
-				threshold: 0,
-				callback_error: callback_error,
-			};
-			window.addEventListener(
-					"LazyLoad::Initialized",
-					function (e) {},
-					false
-			);
-		</script>
-		<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js"></script>
+			<script>
+				var callback_error = function (element) {
+					element.src = "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+				};
+				window.lazyLoadOptions = {
+					threshold: 0,
+					callback_error: callback_error,
+				};
+				window.addEventListener(
+						"LazyLoad::Initialized",
+						function (e) {},
+						false
+				);
+			</script>
+			<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js"></script>
 
 	</body>
 </html>

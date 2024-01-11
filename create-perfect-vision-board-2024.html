@@ -88,7 +88,7 @@
 										<a href="#" aria-label="No navigation yet" class="author"><span class="name">Has</span><img src="images/avatar2.webp" alt="" /></a>
 									</div>
 								</header>
-								<span class="image featured"><img src="images/create-perfect-vision-board-2024.webp" alt="" /></span>
+								<span class="image featured"><img class="lazy" width="100%" data-src="images/create-perfect-vision-board-2024.webp" alt="" /></span>
 								<p>We are stepping into the new year with a brand new mindset which is manifesting the aspirations of our life. One of the most powerful tools that can be utilized to bring our dreams closer is a vision board. The visual representation of your goals serves as a daily reminder of what you want to achieve and opens up new paths for you to explore to get your dreams realized.</p>
 								<p>If you are still not sure how to start creating the vision board or are overwhelmed about what to include in the vision board, this guide is for you.</p>
 								<h3>Structure the Vision</h3>
@@ -141,6 +141,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				var callback_error = function (element) {
+					element.src = "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+				};
+				window.lazyLoadOptions = {
+					threshold: 0,
+					callback_error: callback_error,
+				};
+				window.addEventListener(
+						"LazyLoad::Initialized",
+						function (e) {},
+						false
+				);
+			</script>
+			<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js"></script>
 
 	</body>
 </html>

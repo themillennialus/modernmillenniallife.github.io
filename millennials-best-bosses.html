@@ -87,7 +87,7 @@
 										<a href="#" aria-label="No navigation yet" class="author"><span class="name">Has</span><img src="images/avatar2.webp" alt="" /></a>
 									</div>
 								</header>
-								<span class="image featured"><img src="images/millennials-best-bosses.webp" alt="" /></span>
+								<span class="image featured"><img class="lazy" width="100%" data-src="images/millennials-best-bosses.webp" alt="" /></span>
 								<p>In the ever-evolving landscape of the modern workplace, millennials are emerging as a force to be reckoned with in leadership roles. Far from the stereotypes often associated with this generation, millennials bring a unique set of qualities that make them exceptional bosses. Here are ten reasons why millennials are proving to be the best leaders in today's dynamic work environment.</p>
 								<ol>
 									<li>
@@ -163,6 +163,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				var callback_error = function (element) {
+					element.src = "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+				};
+				window.lazyLoadOptions = {
+					threshold: 0,
+					callback_error: callback_error,
+				};
+				window.addEventListener(
+						"LazyLoad::Initialized",
+						function (e) {},
+						false
+				);
+			</script>
+			<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js"></script>
 
 	</body>
 </html>
