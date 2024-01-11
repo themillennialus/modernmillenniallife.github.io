@@ -87,7 +87,7 @@
 									<a href="#" aria-label="No navigation yet" class="author"><span class="name">Has</span><img src="images/avatar2.webp" alt="" /></a>
 								</div>
 							</header>
-							<a href="create-perfect-vision-board-2024.html" aria-label="Read more about Craft Your 2024 Vision Board: Manifesting Dreams, Step by Step" class="image featured"><img src="images/create-perfect-vision-board-2024.webp" alt="" /></a>
+							<a href="create-perfect-vision-board-2024.html" aria-label="Read more about Craft Your 2024 Vision Board: Manifesting Dreams, Step by Step" class="image featured"><img class="lazy" width="100%" data-src="images/create-perfect-vision-board-2024.webp" alt="" /></a>
 							<p>Step into 2024 with a vision! This guide unlocks the secrets to crafting a powerful vision board, your personalized roadmap to fulfilling your dreams. Discover a simple method to structure your goals, whether it's buying that new phone, acquiring new skills, or becoming a healthier, happier you. Ignite your creativity by finding visuals that resonate with your desires, and explore diverse platforms to build your masterpiece. Remember, your vision board is a daily reminder and motivational tool, urging you to action and guiding you towards success. Embrace the year with unwavering pursuit and watch your aspirations blossom into reality. Let's make 2024 a year of growth, fulfillment, and living the life you've envisioned!</p>
 							<footer>
 								<ul class="actions">
@@ -111,7 +111,7 @@
 										<a href="#" aria-label="No navigation yet" class="author"><span class="name">Has</span><img src="images/avatar2.webp" alt="" /></a>
 									</div>
 								</header>
-								<a href="navigating-30s-anxiety.html" aria-label="Read more about Navigating the Anxious 30s: 10 Ways to Ride the Turbulence" class="image featured"><img src="images/navigating-30s-anxiety.webp" alt="" /></a>
+								<a href="navigating-30s-anxiety.html" aria-label="Read more about Navigating the Anxious 30s: 10 Ways to Ride the Turbulence" class="image featured"><img class="lazy" width="100%" data-src="images/navigating-30s-anxiety.webp" alt="" /></a>
 								<p>In this insightful blog post, the author, approaching their 30s and sharing a common struggle with millennials worldwide, addresses the overwhelming anxiety of getting everything right in life. Offering 10 proven coping strategies, from disconnecting from the digital world to engaging in movement activities, the post guides readers through practical steps to alleviate the fear of uncertainty. The author encourages embracing life's non-linear path, emphasizing self-compassion, and intentional well-being practices as essential tools for navigating the complexities of the 30s with resilience and authenticity. This post serves as a valuable resource for readers seeking practical and effective ways to manage the challenges of this pivotal life stage.</p>
 								<footer>
 									<ul class="actions">
@@ -135,7 +135,7 @@
 										<a href="#" aria-label="No navigation yet" class="author"><span class="name">Has</span><img src="images/avatar2.webp" alt="" /></a>
 									</div>
 								</header>
-								<a href="millennials-best-bosses.html" aria-label="Read more about The Millennial Advantage: 10 Reasons Why They Excel as Exceptional Bosses" class="image featured"><img src="images/millennials-best-bosses.webp" alt="" /></a>
+								<a href="millennials-best-bosses.html" aria-label="Read more about The Millennial Advantage: 10 Reasons Why They Excel as Exceptional Bosses" class="image featured"><img class="lazy" width="100%" data-src="images/millennials-best-bosses.webp" alt="" /></a>
 								<p>Millennials are shaking up the world of leadership, and not in the ways you might expect. Ditch the outdated stereotypes and discover why these digital natives are actually making exceptional bosses. From their collaborative spirit and tech-savviness to their emphasis on purpose and well-being, millennials bring a fresh perspective and innovative approach to the workplace. This blog post explores 10 key reasons why millennials are proving to be some of the best leaders in today's dynamic business landscape. Whether you're a millennial considering leadership roles or an employee curious about working for a millennial boss, this article offers valuable insights into the transformative power of this generation at the helm.</p>
 								<footer>
 									<ul class="actions">
@@ -264,6 +264,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script>
+			var callback_error = function (element) {
+				element.src = "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+			};
+			window.lazyLoadOptions = {
+				threshold: 0,
+				callback_error: callback_error,
+			};
+			window.addEventListener(
+					"LazyLoad::Initialized",
+					function (e) {},
+					false
+			);
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js"></script>
 
 	</body>
 </html>
