@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+	-->
+<html lang="en">
+	<head>
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-XWXCYX78DE"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			
+			gtag('config', 'G-XWXCYX78DE');
+		</script>
+		<title>Navigating the Anxious 30s: 10 Ways to Ride the Turbulence</title>
+		<link rel="icon" type="image/x-icon" href="images/fav/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+		<!--		<link rel="manifest" href="images/fav/site.webmanifest">-->
+		<link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="This digital haven is exclusively designed for millennials by a millennial, sharing and celebrating our unique experiences, challenges and triumphs. Join us to enrich this tapestry of millennial life!">
+		<meta name="keywords" content="millennials, community, experiences, challenges, triumphs, purpose, life, growth, authenticity, sharing, connection, digital haven">
+		<meta name="author" content="Hasara Munasinghe">
+		<meta name="robots" content="index,follow">
+		<link rel="stylesheet" href="assets/css/main-min.css" />
+	</head>
+	<body class="single is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html" aria-label="Visit home page">Modern Millenial Life</a></h1>
+				<nav class="links">
+					<ul>
+						<li><a href="#" aria-label="No navigation yet">Life</a></li>
+						<li><a href="#" aria-label="No navigation yet">Travel</a></li>
+						<li><a href="#" aria-label="No navigation yet">Career</a></li>
+						<li><a href="#" aria-label="No navigation yet">Relationships</a></li>
+					</ul>
+				</nav>
+				<nav class="main">
+					<ul>
+						<li class="menu">
+							<a class="fa-bars" href="#menu">Menu</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<!-- Menu -->
+			<section id="menu">
+				<!-- Links -->
+				<section>
+					<ul class="links">
+						<li>
+							<a href="#" aria-label="No navigation yet">
+								<h3>Life</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#" aria-label="No navigation yet">
+								<h3>Travel</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#" aria-label="No navigation yet">
+								<h3>Career</h3>
+							</a>
+						</li>
+						<li>
+							<a href="#" aria-label="No navigation yet">
+								<h3>Relationships</h3>
+							</a>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<!-- Main -->
+			<div id="main">
+				<!-- Post -->
+				<article class="post">
+					<header>
+						<div class="title">
+							<h1><a href="#" aria-label="Contact us">Let's Talk!</a></h1>
+							<h2>Drop me a line, say hello, or share your thoughts.</h2>
+						</div>
+					</header>
+					<form method="post" action="mailto:hello@modernmillenniallife.com" enctype="text/plain" id="contact-form">
+						<div class="row gtr-uniform">
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="Subject" id="subject" value="" placeholder="Subject" />
+							</div>
+							<div class="col-12">
+								<input type="checkbox" id="demo-human" name="demo-human" required>
+								<label for="demo-human">I am not a robot</label>
+							</div>
+							<div class="col-12">
+								<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
+							</div>
+							<div class="col-12">
+								<ul class="actions">
+									<li><input id="submit-btn" type="submit" value="Send Message" /></li>
+								</ul>
+							</div>
+						</div>
+					</form>
+					<script>
+						const contactForm = document.getElementById("contact-form");
+						const subjectField = document.getElementById("subject");
+						const messageField = document.getElementById("message");
+						const notRobotCheckbox = document.getElementById("demo-human");
+						const submitBtn = document.getElementById("submit-btn");
+						submitBtn.disabled = true;
+						
+						notRobotCheckbox.addEventListener("change", () => {
+						submitBtn.disabled = !notRobotCheckbox.checked;
+						});
+						contactForm.addEventListener("submit", (event) => {
+						event.preventDefault(); // Prevent default form submission
+
+							if (messageField.value === "" || subjectField.value === "") {
+							    alert("Please provide both a subject and a message before sending.");
+							} 
+							else {
+								const subject = subjectField.value;
+								const body = messageField.value;
+								
+								contactForm.action = `mailto:hello@modernmillenniallife.com?subject=${subject}&body=${body}`;
+								contactForm.submit(); // Submit the form with updated action
+							}
+						});
+					</script>
+				</article>
+			</div>
+			<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="#" aria-label="No navigation yet" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" aria-label="No navigation yet" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" aria-label="No navigation yet" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="https://www.pinterest.com/modernmillenniallife/" aria-label="Pinterest" class="icon brands fa-pinterest"><span class="label">Pinterest</span></a></li>
+					<li><a href="#" aria-label="No navigation yet" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<p class="footer-links">
+					<a href="terms-of-service.html" aria-label="Terms of Service">Terms of Service</a>
+					<span>|</span> 
+					<a href="privacy-policy.html" aria-label="Privacy Policy">Privacy Policy</a>
+					<span>|</span>
+					<a href="contact.html" aria-label="Contact us">Contact</a>
+				</p>
+				<p class="copyright">&copy; Modern Millennial Life. <br/>Design: <a href="https://html5up.net" aria-label="Visit HTML5 UP">HTML5 UP</a>. Images: <a href="https://pexels.com" aria-label="Visit Pexels">Pexels</a>.</p>
+			</section>
+		</div>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script>
+			var callback_error = function (element) {
+				element.src = "https://via.placeholder.com/440x560/?text=Error+Placeholder";
+			};
+			window.lazyLoadOptions = {
+				threshold: 0,
+				callback_error: callback_error,
+			};
+			window.addEventListener(
+					"LazyLoad::Initialized",
+					function (e) {},
+					false
+			);
+		</script>
+		<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.min.js"></script>
+	</body>
+</html>
