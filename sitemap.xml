@@ -48,4 +48,22 @@
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://modernmillenniallife.com/happiness-hacks-regulate-serotonin.html</loc>
+        <lastmod>2024-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://modernmillenniallife.com/dopamine-hacks-feel-good-vibes.html</loc>
+        <lastmod>2024-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://modernmillenniallife.com/endorphin-hacks-for-natural-joy.html</loc>
+        <lastmod>2024-01-21</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
