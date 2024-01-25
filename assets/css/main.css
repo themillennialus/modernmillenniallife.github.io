@@ -2778,6 +2778,10 @@ input, select, textarea {
 					margin-bottom: 0;
 				}
 
+				.post > header .title p {
+					margin-bottom: 0;
+				}
+
 			.post > header .meta {
 				padding: 3.75em 3em 1.75em 3em ;
 				border-left: solid 1px rgba(160, 160, 160, 0.3);
